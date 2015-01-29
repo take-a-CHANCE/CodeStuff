@@ -54,16 +54,11 @@ public final class ProgramSkeleton {
                 temp.enqueue(test);
             }
         }
-        temp.flip();
         if (containsX) {
             q.enqueue(x);
-            for (int i = 0; i < temp.length(); i++) {
-                q.enqueue(temp.dequeue());
-            }
-        } else {
-            for (int i = 0; i < temp.length(); i++) {
-                q.enqueue(temp.dequeue());
-            }
+        }
+        for (int i = 0; i < temp.length(); i++) {
+            q.enqueue(temp.dequeue());
         }
     }
 
