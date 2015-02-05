@@ -46,8 +46,8 @@ public final class HelloWorld {
             return a % b;
         } else {
             int mult = a / b;
-            int toMove = a - (a * mult);
-            return -1 * (b - a);
+            int toMove = a - (b * mult);
+            return b - toMove;
         }
     }
 }
